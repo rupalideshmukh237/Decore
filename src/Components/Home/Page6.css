@@ -1,0 +1,105 @@
+.faq-page {
+  background-color: #fffeee;
+  color: #393939;
+  padding-top: 6rem;
+}
+
+.faq-section h1 {
+  font-family: spectral;
+  font-size: 68.3px;
+  font-weight: 200;
+  line-height: 64px;
+}
+
+.faq-section h6,
+span {
+  font-family: spectral;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 64px;
+}
+
+.faq-section p {
+  font-family: spectral;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 550px;
+}
+
+.faq-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  padding: 11px 0;
+  border-top: 1px solid #c8c3b6;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+/* hover image */
+.faq-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+left: 15%;
+  transform: translateY(-50%) scale(0.95);
+  width: 250px;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 10px; */
+  pointer-events: none;
+    z-index: 1;
+}
+
+/* show image on hover */
+.faq-item:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* different image for each faq */
+.faq-item:nth-child(1)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3277-1536x2048.jpg");
+}
+
+.faq-item:nth-child(2)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3254-scaled.jpg");
+}
+
+.faq-item:nth-child(3)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3282-1536x1152.jpg");
+}
+.faq-item:nth-child(4)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3286-1536x2048.jpg");
+}
+.faq-item:nth-child(5)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3252-1536x2048.jpg");
+}
+.faq-item:nth-child(6)::after {
+  background-image: url("https://decor24.in/wp-content/uploads/2026/04/IMG_3249-scaled.jpg");
+}
+
+
+.question {
+  text-align: end;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: regular;
+  font-weight: 100;
+    position: relative;
+  z-index: 2;
+}
+
+.arrow {
+  padding-left: 13rem;
+  font-size: 1rem;
+}
+
+.faq-list {
+  margin-top: 2rem;
+  width: 100%;
+}

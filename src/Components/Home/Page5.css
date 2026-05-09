@@ -1,0 +1,146 @@
+.page5_container{
+ height: 100%;
+    width: 100%;
+  background: #f5e3c3;
+ margin-top: 40%;
+ overflow: hidden;
+                  
+}
+
+.projects-section {
+ width: 100%;
+                  
+}
+
+
+/* Header */
+.projects-header {
+  text-align: center;
+  width: 100%;
+  
+}
+
+.projects-header h1 {
+  font-family: spectral;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #393939;
+  padding-top: 2rem;
+}
+
+.projects-header h1 span {
+  font-style:spectral;
+  font-size: 3rem;
+}
+
+.projects-header p {
+  margin: 30px auto 0;
+  max-width: 900px;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #4b4b4b;
+  font-family: regular;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.project-card {
+  overflow: hidden;
+  margin: 2rem 4rem;
+}
+.viewbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  margin-left: 30rem;
+   cursor: pointer;
+ height: auto ;
+   width: 50%;
+   background-color: #111111;
+   color: white;
+   text-transform: uppercase;
+   border-radius: 20px;
+   font-family:regular;
+   font-size: 1rem;
+   font-weight: 500;
+   border: transparent;
+   padding: 0.7rem 0.1rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+/* Tablet */
+@media (max-width: 992px) {
+  .page5_container {
+    margin-top: 90px; /* reduce huge gap */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+
+  .project-card {
+    margin: 1.5rem; /* reduce side push */
+  }
+
+  .viewbtn {
+    margin-left: 0;
+    margin: 2rem auto;
+    width: 60%;
+  }
+  .projects-header h1 {
+ 
+  font-size: 5rem;
+
+}
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page5_container {
+    margin-top: 10px; /* fix top spacing */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
+  .project-card {
+    margin: 1rem 0; /* remove left/right shift */
+  }
+ .projects-header h1 {
+ 
+  font-size: 3rem;
+
+}
+.projects-header h1 span {
+  
+  font-size: 2rem;
+}
+
+  .viewbtn {
+    margin-left: 0;
+    margin: 2rem auto;
+    width: 90%;
+  }
+}

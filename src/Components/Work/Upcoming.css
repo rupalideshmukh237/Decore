@@ -1,0 +1,151 @@
+.upcoming {
+  background:#fffeee;
+  padding: 70px 60px;
+  font-family:spectral;
+}
+
+/* Heading */
+.upcoming-header {
+   background:#fffeee;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px auto;
+}
+
+.upcoming-header h1 {
+  font-size: 4.5rem;
+  font-family: spectral;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.2;
+}
+
+.upcoming-header h1 span {
+  color: #c89b5e;
+}
+
+.upcoming-header h1 em {
+  font-style: spectral;
+  color: #c89b5e;
+  font-size: 3.5rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.upcoming-header p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: #333;
+}
+
+/* Gallery */
+.upcoming-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Image */
+.image-box {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image-box img {
+  cursor: pointer;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .upcoming {
+    padding: 60px 40px;
+  }
+
+  .upcoming-header h1 {
+    font-size: 3.2rem;
+  }
+
+  .upcoming-header h1 em {
+    font-size: 2.8rem;
+  }
+
+  .upcoming-header p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .upcoming-gallery {
+    gap: 20px;
+  }
+
+  .image-box img {
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .upcoming {
+    padding: 50px 25px;
+  }
+
+  .upcoming-header {
+    margin-bottom: 40px;
+  }
+
+  .upcoming-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .upcoming-header h1 em {
+    font-size: 2rem;
+  }
+
+  .upcoming-header p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  /* single column layout */
+  .upcoming-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image-box img {
+    height: 250px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .upcoming {
+    padding: 40px 18px;
+  }
+
+  .upcoming-header h1 {
+    font-size: 2rem;
+  }
+
+  .upcoming-header h1 em {
+    font-size: 1.7rem;
+  }
+
+  .upcoming-header p {
+    font-size: 0.9rem;
+  }
+
+  .image-box img {
+    height: 200px;
+  }
+}

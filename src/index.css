@@ -1,0 +1,59 @@
+@font-face {
+  font-family: regular ;
+  src: url(/rnCs-xNNww_2s0amA9uCt23BafY (1).ttf);
+}
+@font-face {
+  font-family:medium ;
+  src: url(../public/rnCs-xNNww_2s0amA9uCt23BafY.ttf);
+}
+@font-face {
+  font-family: light;
+  src: url(../public/rnCs-xNNww_2s0amA9uSsG3BafY.ttf);
+}
+@font-face {
+  font-family:spectral ;
+  src: url(../public/spectral-rncs-xnnww_2s0ama9v2s23bafy.ttf);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+  
+}
+body{
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fffeee;
+  /* overflow-x: hidden; */
+ 
+ 
+}
+.react_link{ 
+   color: white;
+   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  button {
+    width: 220px;
+    font-size: 0.9rem;
+    padding: 0.65rem 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  button {
+    width: 180px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.4rem;
+  }
+}
+@media (max-width: 480px) {
+  button {
+    width: 150px;
+    font-size: 0.75rem;
+    padding: 0.55rem 0.3rem;
+  }
+}

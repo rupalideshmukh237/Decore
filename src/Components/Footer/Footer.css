@@ -1,0 +1,170 @@
+.footer {
+  background: #fffeee;
+  padding: 4rem 3rem;
+}
+
+.footer-box {
+  background:#f5e3c3;
+  padding: 2rem;
+  /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08); */
+}
+
+/* top links */
+.footer-top {
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1rem;
+  font-family: regular;
+}
+
+/* middle area */
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.footer-middle h1 {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #5a544b;
+  font-family: spectral;
+  letter-spacing: 2px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #b8892e;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.footer-icons :nth-child(1):hover {
+  
+  color: #e4a018;
+ 
+}
+
+/* bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  /* border-top: 1px solid rgba(0,0,0,0.2); */
+  font-size: 0.95rem;
+  color: #444;
+}
+.footer-bottom p{
+ font-family: regular;
+}
+
+/* Responsive */
+/* ================= EXTRA RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer-box {
+    padding: 1.5rem;
+  }
+
+  .footer-top {
+    gap: 2rem;
+  }
+
+  .footer-middle {
+    padding: 4rem 0;
+  }
+
+  .footer-middle h1 {
+    font-size: 5rem;
+  }
+
+  .footer-icons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.2rem;
+  }
+
+  .footer-box {
+    padding: 1.2rem;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-top a {
+    font-size: 0.9rem;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  .footer-middle h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .footer-icons {
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-box {
+    padding: 1rem;
+  }
+
+  .footer-middle h1 {
+    font-size: 2.2rem;
+  }
+
+  .footer-icons {
+    font-size: 1rem;
+    gap: 0.8rem;
+  }
+
+  .footer-top a {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
